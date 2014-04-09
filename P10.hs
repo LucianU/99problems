@@ -9,7 +9,7 @@
 - [(4,'a'),(1,'b'),(2,'c'),(2,'a'),(1,'d'),(4,'e')]
 -}
 
-import P9
+import qualified P9
 
 encode :: (Eq a) => [a] -> [(Int,a)]
 encode = map (\x -> (length x, head x)) . P9.pack
