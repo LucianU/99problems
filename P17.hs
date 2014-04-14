@@ -9,7 +9,7 @@
 
 split :: [a] -> Int -> ([a], [a])
 split xs at
-    | at > (length xs) || at <= 0 = (xs,[])
+    | at > (length xs) || at <= 0 = ([],xs)
     | otherwise =
         let step g1 g2@(y:ys) c
                 | c == at = (g1,g2)
